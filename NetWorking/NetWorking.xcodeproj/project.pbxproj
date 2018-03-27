@@ -19,6 +19,8 @@
 		C5681356206A08F000D9D126 /* NetWorkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5681355206A08F000D9D126 /* NetWorkingTests.m */; };
 		C5681361206A08F000D9D126 /* NetWorkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5681360206A08F000D9D126 /* NetWorkingUITests.m */; };
 		C5681373206A0B1B00D9D126 /* XBHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C5681372206A0B1B00D9D126 /* XBHttpRequest.m */; };
+		C5681376206A0E4B00D9D126 /* NSString+ToJSONObj.m in Sources */ = {isa = PBXBuildFile; fileRef = C5681375206A0E4B00D9D126 /* NSString+ToJSONObj.m */; };
+		C5681379206A0FB200D9D126 /* NSObject+ToJSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = C5681378206A0FB100D9D126 /* NSObject+ToJSONString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		C5681362206A08F000D9D126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5681371206A0B1B00D9D126 /* XBHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBHttpRequest.h; sourceTree = "<group>"; };
 		C5681372206A0B1B00D9D126 /* XBHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBHttpRequest.m; sourceTree = "<group>"; };
+		C5681374206A0E4B00D9D126 /* NSString+ToJSONObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ToJSONObj.h"; sourceTree = "<group>"; };
+		C5681375206A0E4B00D9D126 /* NSString+ToJSONObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ToJSONObj.m"; sourceTree = "<group>"; };
+		C5681377206A0FB100D9D126 /* NSObject+ToJSONString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ToJSONString.h"; sourceTree = "<group>"; };
+		C5681378206A0FB100D9D126 /* NSObject+ToJSONString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ToJSONString.m"; sourceTree = "<group>"; };
 		D56503083B2A723FAE60DC21 /* libPods-NetWorkingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetWorkingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A6BCC969CBD42B68E5C9E4 /* Pods-NetWorkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkingUITests/Pods-NetWorkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE9FB2E32CAAFDC0FFED7B60 /* Pods-NetWorking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorking.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +187,10 @@
 			children = (
 				C5681370206A0A4D00D9D126 /* XBNetWorking */,
 				C568136F206A0A4D00D9D126 /* XBModelLayer */,
+				C5681374206A0E4B00D9D126 /* NSString+ToJSONObj.h */,
+				C5681375206A0E4B00D9D126 /* NSString+ToJSONObj.m */,
+				C5681377206A0FB100D9D126 /* NSObject+ToJSONString.h */,
+				C5681378206A0FB100D9D126 /* NSObject+ToJSONString.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -490,8 +500,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5681376206A0E4B00D9D126 /* NSString+ToJSONObj.m in Sources */,
 				C5681341206A08F000D9D126 /* ViewController.m in Sources */,
 				C5681373206A0B1B00D9D126 /* XBHttpRequest.m in Sources */,
+				C5681379206A0FB200D9D126 /* NSObject+ToJSONString.m in Sources */,
 				C568134C206A08F000D9D126 /* main.m in Sources */,
 				C568133E206A08F000D9D126 /* AppDelegate.m in Sources */,
 			);
