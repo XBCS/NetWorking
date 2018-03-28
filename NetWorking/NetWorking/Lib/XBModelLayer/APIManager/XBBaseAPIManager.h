@@ -23,11 +23,15 @@
 @property (nonatomic, assign) BOOL needSecurePostRequest;
 @property (nonatomic, assign) BOOL isLoading;
 
-- (NSString *)apiURL;
+
 - (instancetype)initWithDelegate:(id<XBAPIManagerDelegate>)delegate params:(NSDictionary *)params;
+
 - (void)requestAsynchrously;
 - (void)requestAsynchrouslyWithTaskType:(HttpSessionTaskType)taskType;
 - (void)cancelRequest;
+
+// 返回BaseURL
+- (NSString *)apiURL;
 
 
 @end

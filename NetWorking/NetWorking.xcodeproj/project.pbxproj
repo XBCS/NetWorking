@@ -29,6 +29,10 @@
 		C56813C5206B671200D9D126 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C56813C0206B671100D9D126 /* Info.plist */; };
 		C56813C6206B671200D9D126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C56813C1206B671200D9D126 /* main.m */; };
 		C56813C7206B671200D9D126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56813C2206B671200D9D126 /* Assets.xcassets */; };
+		C56813CC206B69DE00D9D126 /* XBAPIManagerParamsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C56813CB206B69DE00D9D126 /* XBAPIManagerParamsHelper.m */; };
+		C56813D3206B6A9B00D9D126 /* NSDictionary(TS_Value).m in Sources */ = {isa = PBXBuildFile; fileRef = C56813CF206B6A9B00D9D126 /* NSDictionary(TS_Value).m */; };
+		C56813D4206B6A9B00D9D126 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C56813D0206B6A9B00D9D126 /* README.md */; };
+		C56813D5206B6A9B00D9D126 /* NSDictionary(TS_Sort).m in Sources */ = {isa = PBXBuildFile; fileRef = C56813D2206B6A9B00D9D126 /* NSDictionary(TS_Sort).m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,13 @@
 		C56813C0206B671100D9D126 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C56813C1206B671200D9D126 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C56813C2206B671200D9D126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C56813CA206B69DE00D9D126 /* XBAPIManagerParamsHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBAPIManagerParamsHelper.h; sourceTree = "<group>"; };
+		C56813CB206B69DE00D9D126 /* XBAPIManagerParamsHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBAPIManagerParamsHelper.m; sourceTree = "<group>"; };
+		C56813CE206B6A9B00D9D126 /* NSDictionary(TS_Sort).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary(TS_Sort).h"; sourceTree = "<group>"; };
+		C56813CF206B6A9B00D9D126 /* NSDictionary(TS_Value).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary(TS_Value).m"; sourceTree = "<group>"; };
+		C56813D0206B6A9B00D9D126 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C56813D1206B6A9B00D9D126 /* NSDictionary(TS_Value).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary(TS_Value).h"; sourceTree = "<group>"; };
+		C56813D2206B6A9B00D9D126 /* NSDictionary(TS_Sort).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary(TS_Sort).m"; sourceTree = "<group>"; };
 		D56503083B2A723FAE60DC21 /* libPods-NetWorkingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetWorkingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A6BCC969CBD42B68E5C9E4 /* Pods-NetWorkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkingUITests/Pods-NetWorkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE9FB2E32CAAFDC0FFED7B60 /* Pods-NetWorking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorking.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking.release.xcconfig"; sourceTree = "<group>"; };
@@ -252,6 +263,7 @@
 		C5681397206B5F5800D9D126 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C56813CD206B6A9B00D9D126 /* NSDictionaryCategories */,
 				C5681398206B5F5800D9D126 /* NSObject+ToJSONString.h */,
 				C5681399206B5F5800D9D126 /* NSString+ToJSONObj.h */,
 				C568139A206B5F5800D9D126 /* NSString+ToJSONObj.m */,
@@ -286,6 +298,8 @@
 				C56813B2206B628E00D9D126 /* XBAPIManagerDefine.h */,
 				C56813B3206B63D100D9D126 /* XBAPIManagerDelegate.h */,
 				C56813B7206B660400D9D126 /* XBAPIManagerOverideMethods.h */,
+				C56813CA206B69DE00D9D126 /* XBAPIManagerParamsHelper.h */,
+				C56813CB206B69DE00D9D126 /* XBAPIManagerParamsHelper.m */,
 				C56813B5206B640700D9D126 /* XBBaseAPIManager.h */,
 				C56813B4206B640700D9D126 /* XBBaseAPIManager.m */,
 			);
@@ -317,6 +331,18 @@
 				C56813C1206B671200D9D126 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C56813CD206B6A9B00D9D126 /* NSDictionaryCategories */ = {
+			isa = PBXGroup;
+			children = (
+				C56813CE206B6A9B00D9D126 /* NSDictionary(TS_Sort).h */,
+				C56813CF206B6A9B00D9D126 /* NSDictionary(TS_Value).m */,
+				C56813D0206B6A9B00D9D126 /* README.md */,
+				C56813D1206B6A9B00D9D126 /* NSDictionary(TS_Value).h */,
+				C56813D2206B6A9B00D9D126 /* NSDictionary(TS_Sort).m */,
+			);
+			path = NSDictionaryCategories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +462,7 @@
 			files = (
 				C56813C3206B671200D9D126 /* LaunchScreen.storyboard in Resources */,
 				C56813C4206B671200D9D126 /* Main.storyboard in Resources */,
+				C56813D4206B6A9B00D9D126 /* README.md in Resources */,
 				C56813C7206B671200D9D126 /* Assets.xcassets in Resources */,
 				C56813C5206B671200D9D126 /* Info.plist in Resources */,
 			);
@@ -563,9 +590,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DeviceUtil/DeviceUtil.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DeviceUtil.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -610,15 +640,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56813C6206B671200D9D126 /* main.m in Sources */,
+				C56813D3206B6A9B00D9D126 /* NSDictionary(TS_Value).m in Sources */,
 				C568138C206A169800D9D126 /* XBHttpPostRequest.m in Sources */,
 				C568139D206B5F5800D9D126 /* NSObject+ToJSONString.m in Sources */,
 				C56813B1206B60A200D9D126 /* XBErrorHelper.m in Sources */,
 				C568138F206A169800D9D126 /* XBHttpGetRequest.m in Sources */,
 				C568139C206B5F5800D9D126 /* NSString+ToJSONObj.m in Sources */,
 				C56813A8206B5FEB00D9D126 /* ViewController.m in Sources */,
+				C56813D5206B6A9B00D9D126 /* NSDictionary(TS_Sort).m in Sources */,
 				C5681392206A16C000D9D126 /* XBHttpRequestManager.m in Sources */,
 				C568138E206A169800D9D126 /* XBHttpRequest.m in Sources */,
 				C56813AE206B609200D9D126 /* XBBaseDataCenter.m in Sources */,
+				C56813CC206B69DE00D9D126 /* XBAPIManagerParamsHelper.m in Sources */,
 				C5681396206A1C8E00D9D126 /* XBHttpPostRequestMultipartForm.m in Sources */,
 				C56813B6206B640700D9D126 /* XBBaseAPIManager.m in Sources */,
 				C568133E206A08F000D9D126 /* AppDelegate.m in Sources */,

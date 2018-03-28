@@ -14,13 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - DeviceUtil (2.1.2)
+  - FCUUID (1.3.1):
+    - UICKeyChainStore (~> 2.1.0)
+  - UICKeyChainStore (2.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.0)
+  - DeviceUtil (~> 2.1.2)
+  - FCUUID (~> 1.3.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  DeviceUtil: 8a0334404594ba8e3f7fa01caf48cc95b0427333
+  FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
 
-PODFILE CHECKSUM: 8897488400bcafc7af136077d1f0e5077ff3d05e
+PODFILE CHECKSUM: 3cdffe965556301bdaf3bfe52605bdba3372b326
 
 COCOAPODS: 1.4.0
