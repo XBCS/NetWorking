@@ -53,24 +53,24 @@
 }
 
 //- (AFHTTPRequestOperation *)sendRequestAsyncrously:(XBHttpRequest *)request
-//                                      successBlock:(XBHttpRequestSucceedBlock)successBlock
-//                                         failBlock:(XBHttpRequestFailedBlock)failBlock {
+//                                      succeedBlock:(XBHttpRequestSucceedBlock)succeedBlock
+//                                         failedBlock:(XBHttpRequestFailedBlock)failedBlock {
 //
 //    NSMutableURLRequest *urlRequest = [self getNSURLRequestWithXBHttpRequest:httpRequest];
 //
 //    void (^requestSuccessBlock)(AFHTTPRequestOperation *operation, id responseObject) = ^(AFHTTPRequestOperation *operation, id responseObject) {
 //        [self logWithOperation:operation andXBHttpRequest:httpRequest];
 //
-//        if (!!successBlock) {
-//            successBlock(httpRequest, [self dictionaryWithData:responseObject]);
+//        if (succeedBlock) {
+//            succeedBlock(httpRequest, [self dictionaryWithData:responseObject]);
 //        }
 //    };
 //
 //    void (^requestFailureBlock)(AFHTTPRequestOperation *operation, NSError *error) = ^(AFHTTPRequestOperation *operation, NSError *error) {
 //        [self logWithOperation:operation andXBHttpRequest:httpRequest];
 //
-//        if (!!failBlock) {
-//            failBlock(httpRequest, error);
+//        if (failedBlock) {
+//            failedBlock(httpRequest, error);
 //        }
 //    };
 //

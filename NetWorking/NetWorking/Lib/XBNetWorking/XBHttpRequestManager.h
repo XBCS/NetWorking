@@ -14,8 +14,8 @@
 + (instancetype)sharedInstance;
 
 //- (AFHTTPRequestOperation *)sendRequestAsyncrously:(XBHttpRequest *)request
-//                                      successBlock:(XBHttpRequestSucceedBlock)successBlock
-//                                         failBlock:(XBHttpRequestFailedBlock)failBlock;
+//                                      succeedBlock:(XBHttpRequestSucceedBlock)successBlock
+//                                         failedBlock:(XBHttpRequestFailedBlock)failedBlock;
 
 - (NSURLSessionTask *)sendSessionRequestAsyncrously:(XBHttpRequest *)httpRequest
                                        succeedBlock:(XBHttpRequestSucceedBlock)succeedBlock
