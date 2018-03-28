@@ -11,8 +11,8 @@
 
 #pragma mark - ################## API服务器地址 ##################
 
-#define kXBDistributionHost                                                  (@"http://123.56.84.63:9012/")         //正式服务器地址
-#define kXBDevelopmentHost                                                  (@"http://123.56.84.63:9012/")         //测试服务器地址
+#define kXBDistributionHost                                                  (@"http://www.zhanqi.tv/api/")         //正式服务器地址
+#define kXBDevelopmentHost                                                  (@"http://www.zhanqi.tv/api/")         //测试服务器地址
 
 #pragma mark - ################## API通用参数列表 ##################
 
@@ -22,6 +22,7 @@
 #define kAPIDevParam_MargketCode                                            (@"market")
 #define kAPIDevParam_Model                                                  (@"model")
 #define kAPIDevParam_PushToken                                              (@"push_token")
+#define kUploadPushTokenParam_PushToken             (@"push_token")
 #define kAPIDevParam_AppVersion                                             (@"version")
 #define kAPIDevParam_DeviceType                                             (@"device_type")
 #define kAPIDevParam_IDFA                                                   (@"imei")
@@ -56,6 +57,6 @@
 #define kAPINameUserRegister                                                (@"register")
 #define kAPINameUploadPushToken                                             (@"dev_login")
 
-
+#define kAPINameTestHome        (@"static/live.index/recommend-apps.json?")
 
 #endif /* XBAPIManagerDefine_h */

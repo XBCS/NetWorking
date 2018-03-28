@@ -12,6 +12,7 @@
 #import "XBHttpPostRequestMultipartForm.h"
 #import "XBNetWorkingDefine.h"
 #import <AFNetworking.h>
+#import "AFURLResponseSerialization.h"
 #import "NSString+ToJSONObj.h"
 
 @interface XBHttpRequestManager () {
@@ -43,6 +44,9 @@
 //        _operationManager.responseSerializer.acceptableContentTypes = nil;
         self.tastType = HttpSessionTaskType_Normal;
         self.sessionManager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        AFHTTPResponseSerializer *serializer = [AFHTTPResponseSerializer serializer];
+        serializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", @"text/plain", nil];
+        self.sessionManager.responseSerializer = serializer;
         
         NSURLCache *cache = [NSURLCache sharedURLCache];
         [cache setMemoryCapacity:kURLCacheMemoryCapacity];
@@ -115,7 +119,7 @@
 
 - (NSURLSessionDataTask *)requestWithNormalTask:(XBHttpRequest *)httpRequest  urlRequest:(NSURLRequest *)urlRequest succeed:(XBHttpRequestSucceedBlock)succeedBlock failedBlock:(XBHttpRequestFailedBlock)failedBlock {
     
-    // 此接口"dataTaskWithRequest:completionHandler:"已不建议使用
+// 过时接口
 //    NSURLSessionDataTask *dataTask = [self.sessionManager dataTaskWithRequest:urlRequest completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
 //        // todo 打印log
 //        //       [self logWithOperation:operation andXBHttpRequest:httpRequest];

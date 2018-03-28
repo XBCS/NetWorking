@@ -5,11 +5,17 @@
 //  Created by 李泽宇 on 2018/3/28.
 //  Copyright © 2018年 丶信步沧桑. All rights reserved.
 //
-
+#import <Foundation/Foundation.h>
 #import "XBAPIManagerParamsHelper.h"
 #import "XBAPIManagerDefine.h"
 #import "NSDictionary(TS_Sort).h"
 #import "NSDictionary(TS_Value).h"
+#import <FCUUID.h>
+#import <DeviceUtil.h>
+#import <AdSupport/AdSupport.h>
+
+#import "NSString(TS_EncodingAndDecoding).h"
+
 
 #define kDevicePrivateKeyFirst              (2)
 #define kDevicePrivateKeySecond             (7)
@@ -49,11 +55,11 @@
     //    }
     
     //marketCode
-    NSString *marketCodeParam = [allParams stringValueForKey:kAPIDevParam_MargketCode defaultValue:@""];
-    if (marketCodeParam.length <= 0) {
-        NSString *marketCode = [BSMarketCodeHelper marketCode];
-        allParams[kAPIDevParam_MargketCode] = marketCode.length > 0 ? marketCode : @"";
-    }
+//    NSString *marketCodeParam = [allParams stringValueForKey:kAPIDevParam_MargketCode defaultValue:@""];
+//    if (marketCodeParam.length <= 0) {
+//        NSString *marketCode = [BSMarketCodeHelper marketCode];
+//        allParams[kAPIDevParam_MargketCode] = marketCode.length > 0 ? marketCode : @"";
+//    }
     
     //appVersion
     NSString *appVersionParam = [allParams stringValueForKey:kAPIDevParam_AppVersion defaultValue:@""];
@@ -77,7 +83,7 @@
     //model
     NSString *modelParam = [allParams stringValueForKey:kAPIDevParam_Model defaultValue:@""];
     if (modelParam.length <= 0) {
-        NSString *deviceModel = [[UIDevice currentDevice] hardwareDescription];
+        NSString *deviceModel = [DeviceUtil hardwareDescription];
         allParams[kAPIDevParam_Model] = deviceModel.length > 0 ? deviceModel : @"";
     }
     
@@ -131,10 +137,10 @@
     [allParams removeObjectForKey:kAPITokenParam];
     //    BBTUserInfoModel *userInfoModel = BBTUserInfoModelHelper.userInfoModel;
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSString *token = [userDefaults objectForKey:kToken];
+    NSString *token = [userDefaults objectForKey:kAPITokenParam];
     
     allParams[kAPITokenParam] = token > 0 ? token : @"";
-    
+//    return nil;
     return allParams;
 }
 

@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "XBAPIManagerDelegate.h"
+#import "XBAPIManagerOverideMethods.h"
 #import "XBAPIManagerDefine.h"
 #import "XBHttpRequest.h"
 #import "XBHttpGetRequest.h"

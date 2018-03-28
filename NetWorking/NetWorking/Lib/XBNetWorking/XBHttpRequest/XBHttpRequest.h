@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 //#import "AFHTTPRequestOperation.h"
-#import <AFURLSessionManager.h>
+//#import <AFURLSessionManager.h>
 
 @class XBHttpRequest;
 

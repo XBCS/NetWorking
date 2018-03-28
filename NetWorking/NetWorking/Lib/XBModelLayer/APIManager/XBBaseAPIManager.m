@@ -6,8 +6,11 @@
 //
 
 #import "XBBaseAPIManager.h"
+#import "XBAPIManagerDefine.h"
 #import "XBAPIManagerOverideMethods.h"
-
+#import "XBAPIManagerParamsHelper.h"
+#import "BSSettingInformation.h"
+#import "BSSettingInfomationDefine.h"
 
 @interface XBBaseAPIManager ()
 
@@ -55,6 +58,11 @@
     [self doSessionRequestAsynchrously];
 }
 
+- (void)cancelRequest {
+    [_request cancel];
+    _request = nil;
+}
+
 
 #pragma mark - private - API request 相关
 
@@ -71,30 +79,56 @@
 }
 
 - (void)doSessionRequestAsynchrously {
-    _params = [BSAPIManagerParamsHelper appendTokenInto:_params];
-    if (self.needSecurePostRequest &&  self.request.methodType == TSHttpRequestMethodTypePost) {
-        _params = [BSAPIManagerParamsHelper appendPostRequestSecurityCodeInto:_params];
+    _params = [XBAPIManagerParamsHelper appendTokenInto:_params];
+    if (self.needSecurePostRequest &&  self.request.methodType == RequestMethodTypePost) {
+        _params = [XBAPIManagerParamsHelper appendPostRequestSecurityCodeInto:_params];
     }
     _request.params = _params;
     _request.userInfo = self.userInfo;
     
-    [_request sendSessionWithSuccessBlock:^(TSHttpRequest *request, NSDictionary *result) {
+    [_request sendSessionWithSucceedBlock:^(XBHttpRequest *request, NSDictionary *result) {
         _isLoading = NO;
         [self request:request didSucceedToLoadData:result];
         
-    } failBlock:^(TSHttpRequest *request, NSError *error) {
+    } failedBlock:^(XBHttpRequest *request, NSError *error) {
         _isLoading = NO;
         [self request:request didFailToLoadWithError:error];
     }];
 }
 
-
+- (RequestMethodType)apiMethodType {
+    return RequestMethodTypeGet;
+}
 
 
 - (NSString *)apiURL {
+    NSString *host = nil;
     
+    BOOL testMode = [BSSettingInformation sharedInstance].testModeEnable;
+    if (testMode) {
+        host = kXBDevelopmentHost;
+    } else {
+        host = kXBDistributionHost;
+    }
+    NSString *apiURL = [host stringByAppendingPathComponent:[self apiMethodName]];
+    
+    return apiURL;
+}
+
+- (NSString *)apiMethodName {
     return nil;
 }
+
+#pragma mark - private - API response 相关
+
+- (void)request:(XBHttpRequest *)request didSucceedToLoadData:(NSDictionary *)data {
+    [self.childAPIManager request:request succeededToLoadData:data];
+}
+
+- (void)request:(XBHttpRequest *)request didFailToLoadWithError:(NSError *)error {
+    [self.childAPIManager request:request failedToLoadWithError:error];
+}
+
 
 
 @end

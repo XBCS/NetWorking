@@ -17,19 +17,22 @@ PODS:
   - DeviceUtil (2.1.2)
   - FCUUID (1.3.1):
     - UICKeyChainStore (~> 2.1.0)
+  - JSONModel (1.7.0)
   - UICKeyChainStore (2.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.0)
   - DeviceUtil (~> 2.1.2)
   - FCUUID (~> 1.3.1)
+  - JSONModel (~> 1.7.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   DeviceUtil: 8a0334404594ba8e3f7fa01caf48cc95b0427333
   FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
 
-PODFILE CHECKSUM: 3cdffe965556301bdaf3bfe52605bdba3372b326
+PODFILE CHECKSUM: 567f97b227f52bb8988c146292fe5b5eba67eb4d
 
 COCOAPODS: 1.4.0

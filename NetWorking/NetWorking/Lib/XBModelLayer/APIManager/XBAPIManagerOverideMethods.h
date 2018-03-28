@@ -14,11 +14,11 @@
 
 - (NSString *)apiMethodName;
 
-- (HttpRequestMethodType)apiMethodType;
+- (RequestMethodType)apiMethodType;
 
-- (void)request:(TSHttpRequest *)request succeededToLoadData:(NSDictionary *)data;
+- (void)request:(XBHttpRequest *)request succeededToLoadData:(NSDictionary *)data;
 
-- (void)request:(TSHttpRequest *)request failedToLoadWithError:(NSError *)error;
+- (void)request:(XBHttpRequest *)request failedToLoadWithError:(NSError *)error;
 
 
 @end

@@ -55,6 +55,7 @@
     request.methodType = methodType;
     request.timeoutInterval = interval == 0 ? kXBHttpRequestTimeOutInterval : interval;
     
+    
     return request;
 }
 
