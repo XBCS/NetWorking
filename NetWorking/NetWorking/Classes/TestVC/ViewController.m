@@ -36,11 +36,11 @@
 - (void)requestTestListSucceed:(TestHomeBaseModel *)baseModel {
     
     NSLog(@"%@", baseModel);
+    // 逻辑处理...
     
 }
 - (void)requestTestListFailed:(NSString *)msg {
-    
-    
+    // 逻辑处理...
 }
 
 
