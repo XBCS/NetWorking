@@ -10,6 +10,10 @@
 		4F0F72533C8144FAFBDAD049 /* libPods-NetWorkingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12784F6CD644184713308FC3 /* libPods-NetWorkingUITests.a */; };
 		882246C6C3001267BF8F1B6D /* libPods-NetWorkingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D56503083B2A723FAE60DC21 /* libPods-NetWorkingTests.a */; };
 		9D391DBA767EFC24B4C2EA78 /* libPods-NetWorking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6795CFC7002855E819099874 /* libPods-NetWorking.a */; };
+		C54C2050207B2909006F7DE1 /* XBBaseAPIManager+InterceptorDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C204F207B2909006F7DE1 /* XBBaseAPIManager+InterceptorDispatcher.m */; };
+		C54C2054207B2913006F7DE1 /* XBAPIManagerInterceptorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C2051207B2913006F7DE1 /* XBAPIManagerInterceptorModel.m */; };
+		C54C2055207B2913006F7DE1 /* XBAPIManagerInterceptors.plist in Resources */ = {isa = PBXBuildFile; fileRef = C54C2053207B2913006F7DE1 /* XBAPIManagerInterceptors.plist */; };
+		C54C2058207B2959006F7DE1 /* XBAPIManagerInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C2057207B2959006F7DE1 /* XBAPIManagerInterceptor.m */; };
 		C568133E206A08F000D9D126 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C568133D206A08F000D9D126 /* AppDelegate.m */; };
 		C5681356206A08F000D9D126 /* NetWorkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5681355206A08F000D9D126 /* NetWorkingTests.m */; };
 		C5681361206A08F000D9D126 /* NetWorkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5681360206A08F000D9D126 /* NetWorkingUITests.m */; };
@@ -70,6 +74,14 @@
 		4CA2BCAF3D7AF59F50FF05D1 /* Pods-NetWorkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkingTests/Pods-NetWorkingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6795CFC7002855E819099874 /* libPods-NetWorking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetWorking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFE102A6CE4EEFC017B8819 /* Pods-NetWorking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking.debug.xcconfig"; sourceTree = "<group>"; };
+		C54C204E207B2909006F7DE1 /* XBBaseAPIManager+InterceptorDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XBBaseAPIManager+InterceptorDispatcher.h"; path = "NetWorking/Lib/XBModelLayer/TokenCheck/XBBaseAPIManager+InterceptorDispatcher.h"; sourceTree = SOURCE_ROOT; };
+		C54C204F207B2909006F7DE1 /* XBBaseAPIManager+InterceptorDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XBBaseAPIManager+InterceptorDispatcher.m"; path = "NetWorking/Lib/XBModelLayer/TokenCheck/XBBaseAPIManager+InterceptorDispatcher.m"; sourceTree = SOURCE_ROOT; };
+		C54C2051207B2913006F7DE1 /* XBAPIManagerInterceptorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAPIManagerInterceptorModel.m; sourceTree = "<group>"; };
+		C54C2052207B2913006F7DE1 /* XBAPIManagerInterceptorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAPIManagerInterceptorModel.h; sourceTree = "<group>"; };
+		C54C2053207B2913006F7DE1 /* XBAPIManagerInterceptors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XBAPIManagerInterceptors.plist; sourceTree = "<group>"; };
+		C54C2056207B2959006F7DE1 /* XBAPIManagerInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBAPIManagerInterceptor.h; sourceTree = "<group>"; };
+		C54C2057207B2959006F7DE1 /* XBAPIManagerInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBAPIManagerInterceptor.m; sourceTree = "<group>"; };
+		C54C2059207B297D006F7DE1 /* XBAPIManagerInterceptorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBAPIManagerInterceptorProtocol.h; sourceTree = "<group>"; };
 		C5681339206A08F000D9D126 /* NetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568133C206A08F000D9D126 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C568133D206A08F000D9D126 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -196,6 +208,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C54C204A207B28C4006F7DE1 /* TokenCheck */ = {
+			isa = PBXGroup;
+			children = (
+				C54C204B207B28C4006F7DE1 /* XBInterceptors */,
+			);
+			path = TokenCheck;
+			sourceTree = "<group>";
+		};
+		C54C204B207B28C4006F7DE1 /* XBInterceptors */ = {
+			isa = PBXGroup;
+			children = (
+				C54C204E207B2909006F7DE1 /* XBBaseAPIManager+InterceptorDispatcher.h */,
+				C54C204F207B2909006F7DE1 /* XBBaseAPIManager+InterceptorDispatcher.m */,
+				C54C204C207B28C4006F7DE1 /* Interceptors */,
+				C54C204D207B28C4006F7DE1 /* InterceptorModel */,
+			);
+			path = XBInterceptors;
+			sourceTree = "<group>";
+		};
+		C54C204C207B28C4006F7DE1 /* Interceptors */ = {
+			isa = PBXGroup;
+			children = (
+				C54C2056207B2959006F7DE1 /* XBAPIManagerInterceptor.h */,
+				C54C2057207B2959006F7DE1 /* XBAPIManagerInterceptor.m */,
+				C54C2059207B297D006F7DE1 /* XBAPIManagerInterceptorProtocol.h */,
+			);
+			path = Interceptors;
+			sourceTree = "<group>";
+		};
+		C54C204D207B28C4006F7DE1 /* InterceptorModel */ = {
+			isa = PBXGroup;
+			children = (
+				C54C2052207B2913006F7DE1 /* XBAPIManagerInterceptorModel.h */,
+				C54C2051207B2913006F7DE1 /* XBAPIManagerInterceptorModel.m */,
+				C54C2053207B2913006F7DE1 /* XBAPIManagerInterceptors.plist */,
+			);
+			path = InterceptorModel;
+			sourceTree = "<group>";
+		};
 		C5681330206A08F000D9D126 = {
 			isa = PBXGroup;
 			children = (
@@ -224,9 +275,9 @@
 				C568133C206A08F000D9D126 /* AppDelegate.h */,
 				C568133D206A08F000D9D126 /* AppDelegate.m */,
 				C56813A2206B5FEB00D9D126 /* Classes */,
-				C56813C9206B674E00D9D126 /* Supporting Files */,
 				C568136E206A0A4D00D9D126 /* Lib */,
 				C5681397206B5F5800D9D126 /* Category */,
+				C56813C9206B674E00D9D126 /* Supporting Files */,
 			);
 			path = NetWorking;
 			sourceTree = "<group>";
@@ -252,9 +303,9 @@
 		C568136E206A0A4D00D9D126 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				C56813FF206B7FE100D9D126 /* BSSetting */,
-				C5681370206A0A4D00D9D126 /* XBNetWorking */,
 				C568136F206A0A4D00D9D126 /* XBModelLayer */,
+				C5681370206A0A4D00D9D126 /* XBNetWorking */,
+				C56813FF206B7FE100D9D126 /* BSSetting */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -262,6 +313,7 @@
 		C568136F206A0A4D00D9D126 /* XBModelLayer */ = {
 			isa = PBXGroup;
 			children = (
+				C54C204A207B28C4006F7DE1 /* TokenCheck */,
 				C56813AA206B606800D9D126 /* APIManager */,
 				C56813A9206B606800D9D126 /* DataCenter */,
 				C56813AB206B606900D9D126 /* DBManager */,
@@ -566,6 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56813E7206B71EE00D9D126 /* README.md in Resources */,
+				C54C2055207B2913006F7DE1 /* XBAPIManagerInterceptors.plist in Resources */,
 				C56813C3206B671200D9D126 /* LaunchScreen.storyboard in Resources */,
 				C56813C4206B671200D9D126 /* Main.storyboard in Resources */,
 				C56813D4206B6A9B00D9D126 /* README.md in Resources */,
@@ -754,17 +807,20 @@
 				C568139D206B5F5800D9D126 /* NSObject+ToJSONString.m in Sources */,
 				C56813B1206B60A200D9D126 /* XBErrorHelper.m in Sources */,
 				C568138F206A169800D9D126 /* XBHttpGetRequest.m in Sources */,
+				C54C2050207B2909006F7DE1 /* XBBaseAPIManager+InterceptorDispatcher.m in Sources */,
 				C56813F5206B775D00D9D126 /* XBBaseModel.m in Sources */,
 				C568139C206B5F5800D9D126 /* NSString+ToJSONObj.m in Sources */,
 				C56813D5206B6A9B00D9D126 /* NSDictionary(TS_Sort).m in Sources */,
 				C5681392206A16C000D9D126 /* XBHttpRequestManager.m in Sources */,
 				C56813E8206B71EE00D9D126 /* NSString(TS_Attributed).m in Sources */,
+				C54C2058207B2959006F7DE1 /* XBAPIManagerInterceptor.m in Sources */,
 				C56813FB206B789C00D9D126 /* TestHomeAPIManager.m in Sources */,
 				C56813E6206B71EE00D9D126 /* NSString(TS_EncodingAndDecoding).m in Sources */,
 				C56813FE206B79DC00D9D126 /* TestHomeDataCenter.m in Sources */,
 				C568138E206A169800D9D126 /* XBHttpRequest.m in Sources */,
 				C5681405206B7FE100D9D126 /* BSSettingInformation.m in Sources */,
 				C56813AE206B609200D9D126 /* XBBaseDataCenter.m in Sources */,
+				C54C2054207B2913006F7DE1 /* XBAPIManagerInterceptorModel.m in Sources */,
 				C56813F2206B769C00D9D126 /* TestHomeBaseModel.m in Sources */,
 				C56813CC206B69DE00D9D126 /* XBAPIManagerParamsHelper.m in Sources */,
 				C5681396206A1C8E00D9D126 /* XBHttpPostRequestMultipartForm.m in Sources */,

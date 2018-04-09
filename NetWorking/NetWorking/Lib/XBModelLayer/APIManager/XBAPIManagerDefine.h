@@ -27,6 +27,7 @@
 #define kAPIDevParam_DeviceType                                             (@"device_type")
 #define kAPIDevParam_IDFA                                                   (@"imei")
 #define kAPITokenParam                                                      (@"token")
+#define kUserToken                                              (@"userToken")
 
 #define kAPIResponseParam_status                                            (@"status")
 #define kAPIResponseParam_user_phone                                        (@"phone")
